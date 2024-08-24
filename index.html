@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home-page">
+        <h1>Food Tracker</h1>
+        <button id="fast-food-btn" class="main-btn">Fast Food</button>
+        <button id="restaurant-btn" class="main-btn">Restaurant</button>
+        <button id="grocery-store-btn" class="main-btn">Grocery Store</button>
+    </div>
+
+    <div id="fast-food-page" class="hidden page">
+        <h1>Fast Food Entry</h1>
+        <form id="fast-food-form">
+            <label for="fast-food-place">Place:</label>
+            <input type="text" id="fast-food-place" name="place" required>
+
+            <label for="fast-food-item">Food Item:</label>
+            <input type="text" id="fast-food-item" name="item" required>
+
+            <label for="fast-food-rating">Rating:</label>
+            <input type="number" id="fast-food-rating" name="rating" min="1" max="5" required>
+
+            <button type="submit">Save</button>
+        </form>
+        <button id="back-to-home-1" class="back-btn">Back to Home</button>
+    </div>
+
+    <div id="restaurant-page" class="hidden page">
+        <h1>Restaurant Entry</h1>
+        <form id="restaurant-form">
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="name" required>
+
+            <label for="restaurant-dish">Dish:</label>
+            <input type="text" id="restaurant-dish" name="dish" required>
+
+            <label for="restaurant-rating">Rating:</label>
+            <input type="number" id="restaurant-rating" name="rating" min="1" max="5" required>
+
+            <button type="submit">Save</button>
+        </form>
+        <button id="back-to-home-2" class="back-btn">Back to Home</button>
+    </div>
+
+    <div id="grocery-store-page" class="hidden page">
+        <h1>Grocery Store Entry</h1>
+        <form id="grocery-store-form">
+            <label for="store-name">Store Name:</label>
+            <input type="text" id="store-name" name="name" required>
+
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product" required>
+
+            <label for="product-rating">Rating:</label>
+            <input type="number" id="product-rating" name="rating" min="1" max="5" required>
+
+            <button type="submit">Save</button>
+        </form>
+        <button id="back-to-home-3" class="back-btn">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
